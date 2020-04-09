@@ -15,16 +15,16 @@ hr {
 }
 select {
   text-align:center;
-  margin-left:100px;
+  margin-left:0px;
 }
 .song {
-  margin-left:100px;
-  margin-top:40px;
+  margin-left:0px;
+  margin-top:0px;
 }
 .ask {
-  margin-left:100px;
-  margin-top:40px;
-  margin-bottom:40px;
+  margin-left:0px;
+  margin-top:0px;
+  margin-bottom:0px;
 }
 * {
   letter-spacing:-1.2px;
