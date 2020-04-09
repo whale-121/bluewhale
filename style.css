@@ -27,5 +27,7 @@ select {
   margin-bottom:40px;
 }
 * {
-  letter-spacing:-1.5px
+  letter-spacing:-1.5px;
+  font-family:"dunggeunmo";
+  src: local("dunggeunmo"), url(dunggeunmo.eot), url("dunggeunmo.woff"), format("dunggeunmo.woff"), url("dunggeunmo.ttf") format("truetype");
 }
