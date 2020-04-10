@@ -13,18 +13,23 @@ a {
 hr {
  margin:40px;
 }
-select {
-  text-align:center;
-  margin-left:0px;
+.test{
+  display:block;
+  width:90px;
+  margin:0 auto;
 }
 .song {
   margin-left:0px;
   margin-top:0px;
 }
-.ask {
-  margin-left:0px;
-  margin-top:0px;
-  margin-bottom:0px;
+.ask1{
+  width:500px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.ask1 img{
+  width:500px;
 }
 * {
   letter-spacing:-1.2px;
