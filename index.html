@@ -1,37 +1,174 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-  <title>PURPLE WHALE</title>
-  <meta charset="utf-8" name="PURPLE WHALE" content="당신을 만나러 먼바다를 건너왔어요">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Tabs Styled</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Nunito:200,400,700'>
+
+
+ <style>
+ html {
+	height: 100%;
+  letter-spacing:-1.2px;
+  font-family:"dunggeunmo";
+  src: local("dunggeunmo"), url(dunggeunmo.eot), url("dunggeunmo.woff"), format("dunggeunmo.woff"), url("dunggeunmo.ttf") format("truetype");
+}
+
+body {
+	background: -webkit-linear-gradient(top left, #3D4258, #6670A0, #9688B4);
+	background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+	line-height: 1.5;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+}
+
+.tabs {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.tab-list {
+	padding-bottom: 1rem;
+}
+
+.tab {
+	border: 1px solid transparent;
+	border-radius: 40px;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	color: rgba(255, 255, 255, .6);
+	background: rgba(10, 20, 30, .2);
+}
+
+.tab.active {
+	color: white;
+	background: rgba(255,255,255,.1);
+	border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+	background: -webkit-linear-gradient(top left, white, #F8F8F8);
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+	display: none;
+	padding: 1.5rem;
+	color: #4a5666;
+}
+
+.show {
+	display: block;
+}
+ </style>
+
 </head>
+
 <body>
-  <!-- float 사용 전 헤더 부분
-  <h1><a href="index.html">PURPLE WHALE</a></h1>
-  <div class="list" style="width:100%; text-align:center">
-  <a href="1.html">PURPLE</a><br><br>
-  <a href="2.html">WHALE</a><br><br>
-  <a href="3.html">AND GRAY</a><br><br>
-  <a href="4.html">Cherry Tomato<span style="color:#9370DB; font-weight:bold"> ← <u style="color:#9370DB">NEW!!</u> </span> </a><br><br>
+  <h1>Purple Whale  <iframe width="10" height="10" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330902578&color=%239370db&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> </h1>
+
+<div class="tabs">
+	<nav class="tab-list">
+		<a class="tab active" href="#one">Purple</a>
+		<a class="tab" href="#two">Whale</a>
+		<a class="tab" href="#three">And gray</a>
+    <a class="tab" href="#four">Cherry tomato</a>
+	</nav>
+
+	<div id="one" class="tab-content show">
+    <center>
+    <h2>Beyond Purple Whale</h2>
+    <p>
+      <img src="purplewhale.jpg" width=450px>
+    </p>
+    <p>
+    <strong>FIND THE LOVE</strong> <br>
+      But, <br>
+      Who would have known how <u style="color:#9370DB"><span style="color:#9370DB; text-weight:800">bittersweet</span></u> this would taste?
+    </p>
+  </center>
+   </div>
+
+	<div id="two" class="tab-content">
+    <center>
+      <h2>PURPLE</h2>
+      <p>
+        <img src="first.jpg" width="400px">
+      </p>
+      <p>
+        I love you like the purple.
+      </p>
+      </center>
+  </div>
+
+	<div id="three" class="tab-content">
+    <center>
+        <h2>WHALE</h2>
+        <p>
+    <img src="second.jpg" width="400px">
+    </p>
+    <p>
+    I love you like the purple.
+    </p>
+    </center>
 </div>
-  <hr>
--->
-<div class="child2 fr"><a href="4.html">Cherry Tomato</a></div>
-<div class="child2 fr"><a href="3.html">AND GRAY</a></div>
-<div class="child2 fr"><a href="2.html">WHALE</a></div>
-<div class="child2 fr"><a href="1.html">PURPLE</a></div>
-<div class="child1 fl"><a href="index.html">PURPLE WHALE<br><span style="color:#ffffff;">back to start</span></a></div>
-<div class="spacer"></div>
-  <center>
-  <h2>Beyond Purple Whale</h2>
-  <p>
-    <img src="purplewhale.jpg" width=450px>
+
+<div id="four" class="tab-content">
+  <select class="test">
+    <option value="CLICK ME">click me!</option>
+    <option value="1">I'll be</option>
+    <option value="2">yours</option>
+    <option value="3">and</option>
+    <option value="4">i'm yours</option>
+    <option value="5">already</option>
+  </select>
+  <br>
+  <br><br><br>
+  <div class="ask1">
+      Can I ask you something carefully?<br>
+      I wonder what you eat for dinner.
+  </div>
+  <br><br><br>
+  <div class="song ask1">
+  I love you like the purple.
+  </div>
+  <br><br><br>
+  <p class="ask1">
+    <img src="movie.png" width=100%>
   </p>
-  <p>
-  <strong>FIND THE LOVE</strong> <br>
-    But, <br>
-    Who would have known how <u style="color:#9370DB"><span style="color:#9370DB; text-weight:800">bittersweet</span></u> this would taste?  <iframe width="10" height="10" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175123644&color=%239370db&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-  </p>
-</center>
+    </center>
+</div>
+</div>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<script>
+
+    $(".tab-list").on("click", ".tab", function(e) {
+	e.preventDefault();  //현재 이벤트의 기본 동작을 중단 한다.
+
+	$(".tab").removeClass("active");
+	$(".tab-content").removeClass("show");
+	$(this).addClass("active");
+	$($(this).attr("href")).addClass("show");
+});
+
+/*
+.preventDefault() : 현재 이벤트의 기본 동작을 중단 한다.
+.stopPropagation(): 현재이벤트가 상위로 전파되지 않도록 중단함
+.stopImmediatePropagation :  현재이벤트 + 상위이벤트 모두 중단함.
+
+*/
+
+</script>
+
 </body>
 </html>
