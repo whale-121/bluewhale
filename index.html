@@ -1,46 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Hundred</title>
-    <style>
-        body {
-            background-color#d9d8d7;
-            margin: 0 auto;
-        }
-
-        * {
-            letter-spacing: -1.2px;
-        }
-
-        p {
-            text-align:center;
-        }
-        
-        a {
-            text-decoration: none;
-            color: black;
-            display: block;
-            width: 100%;
-            margin: auto;
-            text-align:center;
-            letter-spacing: -1.5px;
-        }
-
-        iframe {
-            text-align: center;
-        }
-    </style>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
 </head>
 <body>
-    <iframe width="10" height="10" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/231946019&color=%23948c94&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sinerstyle/kissing-you-with-piano" title="소녀시대(SNSD) - Kissing You (Piano ballad)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+	<div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
 
-    <p><img src="box.png" width=80%></p>
-
-    <a href="1.html"><br>백 일이라는 시간을 내 옆에 있어 줘서 고마워<br>
-        나의 앞으로에도 늘 있어 줘<br>
-        백 일 축하해<br>
-        항상 많이 사랑해<br><br>~ click here to show something more~</a>
+		var map = new kakao.maps.Map(container, options);
+	</script>
 </body>
 </html>
